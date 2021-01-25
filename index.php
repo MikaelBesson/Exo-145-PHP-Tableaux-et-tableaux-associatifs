@@ -1,33 +1,38 @@
 <?php
 
-// Premiere ligne
+echo "<br>Premiere ligne<br>";
 
-$fruits = array("Apple", "Banana" "Orange");
-echo ;
-
-//Deuxieme ligne
+$fruits = array("Apple", "Banana", "Orange");
+echo count($fruits)."<br><br>";
 
 
-$age = array("Peter" "35", "Ben" "37", "Joe" "43");
+echo "<br>deuxieme ligne<br>";
 
-echo "<br><br>Ben is " .  . " years old.<br><br>";
 
-($age  $x  $y) {
-    echo "<br>Key=" .  . ", Value=" . ;
+$age = array("Peter" => "35", "Ben" => "37", "Joe" => "43");
+
+echo "<br>Ben is ".$age["Ben"]." years old.<br><br>";
+
+foreach($age as $key => $value) {
+    echo "<br>Key=" .$key. ", Value=" .$value."<br>" ;
+}
+
+echo "<br>troisieme ligne<br><br>";
+
+$colors = array("red", "green", "blue", "yellow");
+sort($colors);
+foreach ($colors as $item){
+    echo "$item.<br>";
 }
 
 
-
-//Troisieme ligne
-
-$colors = array("red", "green", "blue", "yellow");
-;
-
-
-// Quatrieme ligne
+echo "<br>quatrieme ligne<br><br>";
 
 $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
-;
+ksort($age);
+foreach ($age as $key =>$val){
+    echo "$key = $val <br>";
+}
 
 
 
